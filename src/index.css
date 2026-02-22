@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Ensuring a smooth, high-end feel for the whole page */
+    font-variant-ligatures: common-ligatures;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+    /* scroll-behavior: smooth; */
+  }
+
+
+  body {
+    /* Using the 'Stone' background from our config instead of pure white */
+    @apply bg-stone-50 text-stone-900 antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Making headings look premium by default */
+  h1, h2, h3, h4 {
+    @apply font-serif tracking-tight text-primary-950;
+  }
+}
+
+@layer components {
+  /* A reusable class for a "Luxury" button to keep code clean */
+  .btn-primary {
+    @apply px-6 py-3 bg-primary-600 text-white font-medium rounded-sm 
+           transition-all duration-300 hover:bg-primary-700 
+           hover:shadow-lg active:transform active:scale-95;
+  }
+
+  /* Elegant container for sections */
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20;
+  }
+}
