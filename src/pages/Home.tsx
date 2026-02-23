@@ -15,13 +15,7 @@ export default function Home() {
 
       {/* 1. HERO SECTION */}
       <section className="relative h-screen min-h-[800px] flex flex-col justify-between overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
-          style={{
-            backgroundImage:
-              'url(https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/Site%20background.webp)',
-          }}
-        />
+        <div className="hero-bg absolute inset-0 bg-cover bg-center bg-no-repeat scale-105" />
 
         {/* TOP/MIDDLE CONTENT */}
         <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto pt-48 md:pt-64">
