@@ -39,3 +39,21 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20;
   }
 }
+
+
+/* Hero background: responsive swaps */
+.hero-bg {
+  background-image: url("/images/Site%20background.webp");
+}
+
+@media (max-width: 1024px) {
+  .hero-bg {
+    background-image: url("/images/Site%20background%20tablet.webp");
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-bg {
+    background-image: url("/images/Site%20background%20cell.webp");
+  }
+}
