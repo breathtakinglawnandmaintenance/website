@@ -26,7 +26,9 @@ export default function Footer() {
               <img
                 src="/images/Medium2.png"
                 alt="Breathtaking Lawn & Maintenance"
-                className="h-20 w-auto object-contain brightness-110 contrast-110"
+                width="550"
+                height="550"
+                className="h-32 w-auto object-contain brightness-110 contrast-110"
               />
             </Link>
             <p className="text-stone-500 text-[10px] font-light tracking-[0.2em] uppercase">
@@ -36,9 +38,9 @@ export default function Footer() {
 
           {/* 2. Navigation */}
           <div className="flex flex-col items-center md:items-start">
-            <h4 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-8 text-secondary-500/80">
+            <h2 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-8 text-secondary-500/80">
               Navigation
-            </h4>
+            </h2>
 
             <ul className="space-y-4 text-sm font-light">
               <li>
@@ -78,9 +80,9 @@ export default function Footer() {
 
           {/* 3. Business Information */}
           <div className="space-y-6 md:pr-6 flex flex-col items-center md:items-start">
-            <h4 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-8 text-secondary-500/80">
+            <h2 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-8 text-secondary-500/80">
               Business Information
-            </h4>
+            </h2>
 
             <div className="flex items-start gap-4 justify-center md:justify-start">
               <Phone size={16} className="text-secondary-400 mt-1" />
@@ -123,29 +125,31 @@ export default function Footer() {
 
           {/* 4. Social */}
 <div className="flex flex-col items-center md:items-start">
-  <h4 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-8 text-secondary-500/80">
+  <h2 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-8 text-secondary-500/80">
     Connect With Us
-  </h4>
+  </h2>
 
   <div className="flex items-center gap-4 justify-center md:justify-start mb-4">
 
-    <a
-      href="https://www.instagram.com/breathtakinglawnandmaintenance/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-3 border border-white/10 rounded-full hover:bg-secondary-500 hover:text-primary-950 transition-all duration-300"
-    >
-      <Instagram size={20} />
-    </a>
+        <a
+          href="https://www.instagram.com/breathtakinglawnandmaintenance/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Breathtaking Lawn and Maintenance on Instagram"
+          className="p-3 border border-white/10 rounded-full hover:bg-secondary-500 hover:text-primary-950 transition-all duration-300"
+         >
+          <Instagram size={20} aria-hidden="true" />
+        </a>
 
-    <a
-      href="https://www.facebook.com/profile.php?id=61561098543589"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-3 border border-white/10 rounded-full hover:bg-secondary-500 hover:text-primary-950 transition-all duration-300"
-    >
-      <Facebook size={20} />
-    </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61561098543589"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Breathtaking Lawn and Maintenance on Facebook"
+          className="p-3 border border-white/10 rounded-full hover:bg-secondary-500 hover:text-primary-950 transition-all duration-300"
+         >
+          <Facebook size={20} aria-hidden="true" />
+        </a>
 
     <span className="text-xs font-light text-stone-500 uppercase tracking-widest">
       Follow our work

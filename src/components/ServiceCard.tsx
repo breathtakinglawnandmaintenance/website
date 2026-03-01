@@ -18,17 +18,11 @@ interface ServiceCardProps {
 
   /**
    * Tailwind object-position classes for Mode 1 (cover).
-   * Examples:
-   * - "object-center"
-   * - "object-top"
-   * - "object-bottom"
-   * - "object-[50%_35%]"  // x% y%
    */
   imagePosition?: string;
 
   /**
    * Optional background for contain mode (and as a safe fallback).
-   * Example: "bg-stone-100"
    */
   imageBgClassName?: string;
 
@@ -60,7 +54,7 @@ export default function ServiceCard({
                  hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.24)]
                  hover:-translate-y-2"
     >
-      {/* Image Header - Fixed Aspect Ratio (prevents inconsistent cropping across breakpoints) */}
+      {/* Image Header */}
       <div
         className={[
           'relative w-full overflow-hidden',
@@ -71,18 +65,20 @@ export default function ServiceCard({
         <img
           src={image}
           alt={title}
+          width="1200"
+          height="900"
           loading="lazy"
           decoding="async"
           className={[
-          'h-full w-full transition-transform duration-1000 group-hover:scale-110',
-           isContain ? 'object-contain object-center' : `object-cover ${imagePosition}`,
-         ].join(' ')}
+            'h-full w-full transition-transform duration-1000 group-hover:scale-110',
+            isContain ? 'object-contain object-center' : `object-cover ${imagePosition}`,
+          ].join(' ')}
         />
 
-        {/* Elegant Overlay */}
+        {/* Overlay */}
         <div className="absolute inset-0 bg-primary-950/20 group-hover:bg-primary-950/10 transition-colors duration-500" />
 
-        {/* Minimalist Icon Badge - floating inside the image */}
+        {/* Icon */}
         {Icon && (
           <div className="absolute bottom-6 left-6 bg-white p-3 shadow-xl transform transition-transform duration-500 group-hover:scale-110">
             <Icon size={20} className="text-primary-800" />
@@ -90,15 +86,16 @@ export default function ServiceCard({
         )}
       </div>
 
-      {/* Content Area */}
+      {/* Content */}
       <div className="p-10 flex flex-col flex-grow">
-        <h3 className="text-2xl font-serif text-primary-950 mb-4 tracking-tight">{title}</h3>
+        <h3 className="text-2xl font-serif text-primary-950 mb-4 tracking-tight">
+          {title}
+        </h3>
 
         <p className="text-stone-500 leading-relaxed mb-8 text-sm font-light flex-grow">
           {description}
         </p>
 
-        {/* Animated Link Decoration */}
         <div className="flex items-center text-secondary-600 font-bold text-[10px] uppercase tracking-[0.3em] transition-colors group-hover:text-primary-600">
           View Service
           <span className="ml-3 h-px w-8 bg-secondary-300 transition-all duration-500 group-hover:w-12 group-hover:bg-primary-400"></span>

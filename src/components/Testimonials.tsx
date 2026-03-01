@@ -56,7 +56,7 @@ export default function Testimonials() {
             <p className="text-primary-950 font-bold uppercase tracking-[0.2em] text-sm">
               {featured.name}
             </p>
-            <p className="text-secondary-600 text-[10px] uppercase tracking-widest mt-1 font-medium">
+            <p className="text-secondary-700 text-[10px] uppercase tracking-widest mt-1 font-medium">
               {featured.role}
             </p>
           </div>
@@ -93,7 +93,7 @@ export default function Testimonials() {
                   <p className="text-primary-950 font-bold uppercase tracking-[0.2em] text-xs">
                     {t.name}
                   </p>
-                  <p className="text-secondary-600 text-[10px] uppercase tracking-widest mt-1 font-medium">
+                  <p className="text-secondary-700 text-[10px] uppercase tracking-widest mt-1 font-medium">
                     {t.role}
                   </p>
                 </div>

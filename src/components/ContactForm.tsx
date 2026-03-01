@@ -20,7 +20,6 @@ export default function ContactForm() {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
-    // ✅ HARD REQUIRED VALIDATION (guarantees nothing empty is sent)
     if (
       !formData.name.trim() ||
       !formData.email.trim() ||
@@ -88,6 +87,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+
         {/* Name */}
         <div className="relative group">
           <label
@@ -105,7 +105,7 @@ export default function ContactForm() {
             required
             autoComplete="name"
             placeholder="Jane Doe"
-            className="w-full bg-transparent border-b border-stone-200 py-3 outline-none focus:border-secondary-500 transition-colors font-light"
+            className="w-full bg-transparent border-b border-stone-200 py-3 outline-none focus:border-secondary-500 focus-visible:ring-2 focus-visible:ring-secondary-500 focus-visible:ring-offset-2 transition-colors font-light"
           />
         </div>
 
@@ -126,7 +126,7 @@ export default function ContactForm() {
             required
             autoComplete="email"
             placeholder="jane@example.com"
-            className="w-full bg-transparent border-b border-stone-200 py-3 outline-none focus:border-secondary-500 transition-colors font-light"
+            className="w-full bg-transparent border-b border-stone-200 py-3 outline-none focus:border-secondary-500 focus-visible:ring-2 focus-visible:ring-secondary-500 focus-visible:ring-offset-2 transition-colors font-light"
           />
         </div>
 
@@ -147,7 +147,7 @@ export default function ContactForm() {
             required
             autoComplete="tel"
             placeholder="(555) 000-0000"
-            className="w-full bg-transparent border-b border-stone-200 py-3 outline-none focus:border-secondary-500 transition-colors font-light"
+            className="w-full bg-transparent border-b border-stone-200 py-3 outline-none focus:border-secondary-500 focus-visible:ring-2 focus-visible:ring-secondary-500 focus-visible:ring-offset-2 transition-colors font-light"
           />
         </div>
 
@@ -165,7 +165,7 @@ export default function ContactForm() {
             value={formData.service}
             onChange={handleChange}
             required
-            className="w-full bg-transparent border-b border-stone-200 py-3 outline-none focus:border-secondary-500 transition-colors appearance-none cursor-pointer font-light text-stone-700"
+            className="w-full bg-transparent border-b border-stone-200 py-3 outline-none focus:border-secondary-500 focus-visible:ring-2 focus-visible:ring-secondary-500 focus-visible:ring-offset-2 transition-colors appearance-none cursor-pointer font-light text-stone-700"
           >
             <option value="Professional Lawn Care Services">
               Professional Lawn Care Services
@@ -194,11 +194,10 @@ export default function ContactForm() {
           required
           rows={4}
           placeholder="Describe your property needs..."
-          className="w-full bg-stone-50/50 border border-stone-100 p-4 outline-none focus:border-secondary-500 transition-colors resize-none font-light"
+          className="w-full bg-stone-50/50 border border-stone-100 p-4 outline-none focus:border-secondary-500 focus-visible:ring-2 focus-visible:ring-secondary-500 focus-visible:ring-offset-2 transition-colors resize-none font-light"
         />
       </div>
 
-      {/* Inline Status */}
       {submitStatus === 'success' && (
         <div className="rounded-sm border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
           Your request has been submitted. We’ll reach out shortly.
@@ -211,11 +210,10 @@ export default function ContactForm() {
         </div>
       )}
 
-      {/* Submit Button */}
       <button
         type="submit"
         disabled={isSubmitting || submitStatus === 'success'}
-        className="w-full bg-primary-950 text-white py-5 text-[10px] uppercase tracking-[0.5em] font-bold hover:bg-secondary-500 hover:text-primary-950 transition-all duration-300 shadow-xl disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full bg-primary-950 text-white py-5 text-[10px] uppercase tracking-[0.5em] font-bold hover:bg-secondary-500 hover:text-primary-950 focus-visible:ring-2 focus-visible:ring-secondary-500 focus-visible:ring-offset-2 transition-all duration-300 shadow-xl disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {submitStatus === 'success'
           ? 'Request Submitted'

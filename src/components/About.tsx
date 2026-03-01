@@ -24,8 +24,11 @@ export default function About() {
                       <img
                         src="/images/workers-doing-cement-work.webp"
                         alt="The crew performing property maintenance and concrete walkway work at a commercial building entrance"
+                        width="1600"
+                        height="1200"
                         className="w-full h-full object-cover object-[center_80%]"
                         loading="lazy"
+                        decoding="async"
                       />
                     </picture>
                 </div>
