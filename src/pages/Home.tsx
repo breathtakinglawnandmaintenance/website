@@ -1,6 +1,6 @@
 import SEO from '../components/SEO';
 import ServiceCard from '../components/ServiceCard';
-import TestimonialCarousel from '../components/TestimonialCarousel';
+import Testimonials from "../components/Testimonials";
 import About from '../components/About';
 import ContactForm from '../components/ContactForm';
 
@@ -14,7 +14,7 @@ export default function Home() {
       />
 
       {/* 1. HERO SECTION */}
-      <section className="relative h-screen min-h-[800px] flex flex-col justify-between overflow-hidden">
+      <section className="relative min-h-screen w-full flex flex-col justify-between overflow-hidden">
         <div className="hero-bg absolute inset-0 bg-cover bg-center bg-no-repeat scale-105" />
 
         {/* TOP/MIDDLE CONTENT */}
@@ -64,19 +64,19 @@ export default function Home() {
           <ServiceCard
             title="Professional Lawn Services"
             description="Regular mowing, edging, and seasonal care that keeps lawns healthy and properties looking their best."
-            image="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/lawn%20service%20card.webp"
+            image="/images/lawn-service-card.webp"
             link="/services/lawn-care"
           />
           <ServiceCard
             title="Property Repair"
             description="Expert repairs and renovations for properties. From quick fixes to complete transformations."
-            image="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/property%20reair%20card.webp"
+            image="/images/property-repair-card.webp"
             link="/services/property-maintenance"
           />
           <ServiceCard
             title="Hardscaping"
             description="Custom patios, walkways, and stone features built with precision. Durable hardscaping that adds lasting value."
-            image="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/stone%20walkway%20card.webp"
+            image="/images/stone-walkway-card.webp"
             link="/services/landscaping-hardscapes"
           />
         </div>
@@ -86,7 +86,7 @@ export default function Home() {
             <ServiceCard
               title="Planting & Mulch"
               description="Seasonal plantings, mulch installation, and bed maintenance. We keep your landscape beds looking well maintained."
-              image="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/after-front-walk%20service%20card.webp"
+              image="/images/after-front-walk-service-card.webp"
               link="/services/mulch-flower-beds"
             />
           </div>
@@ -94,7 +94,7 @@ export default function Home() {
             <ServiceCard
               title="Snow Removal"
               description="Reliable snow plowing and ice management available 24/7. We keep driveways, walkways, and lots clear throughout winter."
-              image="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/car%20buried%20in%20snow%20card.webp"
+              image="/images/car-buried-in-snow-card.webp"
               link="/services/snow-removal"
             />
           </div>
@@ -105,7 +105,7 @@ export default function Home() {
       <section id="testimonials" className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] p-12 md:p-16">
-            <TestimonialCarousel />
+            <Testimonials />
           </div>
         </div>
       </section>

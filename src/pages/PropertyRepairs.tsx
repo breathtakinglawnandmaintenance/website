@@ -10,7 +10,6 @@ export default function PropertyRepairs() {
         title="Property Repairs | Saratoga Springs, NY | Breathtaking Lawn and Maintenance Care"
         description="Professional property repair services in Saratoga Springs, NY. Structural repairs and interior & exterior maintenance. Request a free quote."
         canonicalPath="/services/property-maintenance"
-        preloadImage="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/Stall%20doors.webp"
       />
 
       <Header />
@@ -30,11 +29,22 @@ export default function PropertyRepairs() {
           {/* ROW 1 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
             <div className="relative">
-              <img
-                src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/Stall%20doors.webp"
-                alt="Custom wood stall construction and structural property repair work"
-                className="w-full h-[500px] object-cover shadow-2xl rounded-sm"
-              />
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/Stall-doors-cell.webp"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcSet="/images/Stall-doors-tablet.webp"
+                />
+                <img
+                  src="/images/Stall-doors.webp"
+                  alt="Custom wood stall construction and structural property repair work"
+                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  loading="lazy"
+                />
+              </picture>
               <div className="absolute inset-0 border border-stone-200 translate-x-4 translate-y-4 -z-10" />
             </div>
 
@@ -62,11 +72,22 @@ export default function PropertyRepairs() {
             </div>
 
             <div className="order-1 lg:order-2 relative">
-              <img
-                src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/remodeled%20kitchen.webp"
-                alt="Renovated residential kitchen with new cabinets and flooring after property restoration"
-                className="w-full h-[500px] object-cover shadow-2xl rounded-sm"
-              />
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/remodeled-kitchen-cell.webp"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcSet="/images/remodeled-kitchen-tablet.webp"
+                />
+                <img
+                  src="/images/remodeled-kitchen.webp"
+                  alt="Renovated residential kitchen with new cabinets and flooring after property restoration"
+                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  loading="lazy"
+                />
+              </picture>
               <div className="absolute inset-0 border border-stone-200 -translate-x-4 translate-y-4 -z-10" />
             </div>
           </div>
@@ -74,11 +95,22 @@ export default function PropertyRepairs() {
           {/* ROW 3 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <img
-                src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/Closet%20doors.webp"
-                alt="Interior room renovation with new flooring and finished closet installation"
-                className="w-full h-[500px] object-cover shadow-2xl rounded-sm"
-              />
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/Closet-doors-cell.webp"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcSet="/images/Closet-doors-tablet.webp"
+                />
+                <img
+                  src="/images/Closet-doors.webp"
+                  alt="Interior room renovation with new flooring and finished closet installation"
+                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  loading="lazy"
+                />
+              </picture>
               <div className="absolute inset-0 border border-stone-200 translate-x-4 translate-y-4 -z-10" />
             </div>
 

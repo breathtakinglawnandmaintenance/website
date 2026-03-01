@@ -7,13 +7,27 @@ export default function About() {
             {/* IMAGE */}
             <div className="relative">
               <div className="rounded-sm overflow-hidden shadow-2xl">
-                <div className="h-[420px] sm:h-[480px] lg:h-[520px]">
-                  <img
-                    src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/workers%20doing%20cement%20work.webp"
-                    alt="The crew performing property maintenance and concrete walkway work at a commercial building entrance"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
+                <div className="h-[420px] sm:h-[480px] lg:h-[600px] xl:h-[520px]">
+                  <picture>
+                      <source
+                        media="(max-width: 640px)"
+                        srcSet="/images/workers-doing-cement-work-cell.webp"
+                      />
+                      <source
+                        media="(max-width: 1023px)"
+                        srcSet="/images/workers-doing-cement-work-tablet.webp"
+                      />
+                      <source
+                        media="(min-width: 1024px) and (max-width: 1024px)"
+                        srcSet="/images/workers-doing-cement-work-cell.webp"
+                      />
+                      <img
+                        src="/images/workers-doing-cement-work.webp"
+                        alt="The crew performing property maintenance and concrete walkway work at a commercial building entrance"
+                        className="w-full h-full object-cover object-[center_80%]"
+                        loading="lazy"
+                      />
+                    </picture>
                 </div>
               </div>
             </div>

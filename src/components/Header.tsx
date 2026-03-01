@@ -17,7 +17,7 @@ export default function Header() {
           <Link to="/" className="block" onClick={() => setIsOpen(false)}>
             <img
               src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/business%20logo.png"
-              alt="Breathtaking Lawn & Maintenance"
+              alt="Breathtaking Lawn and Maintenance Care"
               className="h-32 md:h-36 w-auto object-contain drop-shadow-[0_2px_4px_rgba(0,0,0,1)] md:drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]"
             />
           </Link>

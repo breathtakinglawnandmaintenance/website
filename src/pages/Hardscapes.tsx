@@ -10,7 +10,6 @@ export default function Hardscapes() {
         title="Hardscaping & Landscaping Services | Saratoga Springs, NY | Breathtaking Lawn and Maintenance Care"
         description="Custom hardscaping and landscaping in Saratoga Springs, NY. Patios, walkways, retaining walls, and complete landscape transformations. Request a free quote."
         canonicalPath="/services/landscaping-hardscapes"
-        preloadImage="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/hardscaping%20pool.webp"
       />
 
       <Header />
@@ -31,11 +30,22 @@ export default function Hardscapes() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
             <div className="relative">
               <div className="relative z-10">
-                <img
-                  src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/hardscaping%20pool.webp"
-                  alt="Stamped concrete poolside patio and walkway hardscape installation"
-                  className="w-full h-[280px] sm:h-[340px] md:h-[420px] lg:h-[500px] object-cover object-[50%_35%] shadow-2xl rounded-sm"
+                <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/hardscaping-pool-cell.webp"
                 />
+                <source
+                  media="(max-width: 1024px)"
+                  srcSet="/images/hardscaping-pool-tablet.webp"
+                />
+                <img
+                  src="/images/hardscaping-pool.webp"
+                  alt="Stamped concrete poolside patio and walkway hardscape installation"
+                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  loading="lazy"
+                />
+              </picture>
               </div>
             </div>
 
@@ -64,11 +74,22 @@ export default function Hardscapes() {
 
             <div className="order-1 lg:order-2 relative">
               <div className="relative z-10">
-                <img
-                  src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/brick%20work%20for%20outdoor%20grill.webp"
-                  alt="Built-in outdoor grill installed in stone brick hardscape wall"
-                  className="w-full h-[280px] sm:h-[340px] md:h-[420px] lg:h-[500px] object-cover object-center shadow-2xl rounded-sm"
+                <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/brick-work-for-outdoor-grill-cell.webp"
                 />
+                <source
+                  media="(max-width: 1024px)"
+                  srcSet="/images/brick-work-for-outdoor-grill-tablet.webp"
+                />
+                <img
+                  src="/images/brick-work-for-outdoor-grill.webp"
+                  alt="Built-in outdoor grill installed in stone brick hardscape wall"
+                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  loading="lazy"
+                />
+              </picture>
               </div>
             </div>
           </div>
@@ -77,11 +98,22 @@ export default function Hardscapes() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <div className="relative z-10">
-                <img
-                  src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/Hardscaping%20brick.webp"
-                  alt="Stone paver hardscape installation set into landscaped ground"
-                  className="w-full h-[280px] sm:h-[340px] md:h-[420px] lg:h-[500px] object-cover object-center shadow-2xl rounded-sm"
+                <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/Hardscaping-brick-cell.webp"
                 />
+                <source
+                  media="(max-width: 1024px)"
+                  srcSet="/images/Hardscaping-brick-tablet.webp"
+                />
+                <img
+                  src="/images/Hardscaping-brick.webp"
+                  alt="Stone paver hardscape installation set into landscaped ground"
+                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  loading="lazy"
+                />
+              </picture>
               </div>
             </div>
 

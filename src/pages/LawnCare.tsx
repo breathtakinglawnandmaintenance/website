@@ -10,7 +10,6 @@ export default function LawnCare() {
         title="Lawn Care and Maintenance | Saratoga Springs, NY | Breathtaking Lawn and Maintenance Care"
         description="Professional lawn care and maintenance in Saratoga Springs, NY..."
         canonicalPath="/services/lawn-care"
-        preloadImage="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/Cut%20lawn.webp"
        />
 
       <Header />
@@ -30,14 +29,22 @@ export default function LawnCare() {
           {/* ROW 1 — OPTIMIZED HERO IMAGE */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
             <div className="relative">
-              <img
-                src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/Cut%20lawn.webp"
-                alt="Professional mowing services (striped lawn cut pattern)"
-                className="w-full h-[500px] object-cover shadow-2xl rounded-sm"
-                loading="eager"
-                fetchpriority="high"
-                decoding="async"
-              />
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/Cut-lawn-cell.webp"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcSet="/images/Cut-lawn-tablet.webp"
+                />
+                <img
+                  src="/images/Cut-lawn.webp"
+                  alt="Professional mowing services (striped lawn cut pattern)"
+                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  loading="lazy"
+                />
+              </picture>
               <div className="absolute inset-0 border border-stone-200 translate-x-4 translate-y-4 -z-10" />
             </div>
 
@@ -66,11 +73,22 @@ export default function LawnCare() {
             </div>
 
             <div className="order-1 lg:order-2 relative">
-              <img
-                src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/trimmed%20brush%202.webp"
-                alt="Edging and trimming along roadside hedges"
-                className="w-full h-[500px] object-cover shadow-2xl rounded-sm"
-              />
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/trimmed-brush-cell.webp"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcSet="/images/trimmed-brush-tablet.webp"
+                />
+                <img
+                  src="/images/trimmed-brush-2.webp"
+                  alt="Edging and trimming along roadside hedges"
+                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  loading="lazy"
+                />
+              </picture>
               <div className="absolute inset-0 border border-stone-200 -translate-x-4 translate-y-4 -z-10" />
             </div>
           </div>
@@ -78,11 +96,22 @@ export default function LawnCare() {
           {/* ROW 3 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <img
-                src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/Fall%20leaves.webp"
-                alt="Seasonal cleanup (fall leaf removal)"
-                className="w-full h-[500px] object-cover shadow-2xl rounded-sm"
-              />
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/Fall-leaves-cell.webp"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcSet="/images/Fall-leaves-tablet.webp"
+                />
+                <img
+                  src="/images/Fall-leaves.webp"
+                  alt="Seasonal cleanup (fall leaf removal)"
+                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  loading="lazy"
+                />
+              </picture>
               <div className="absolute inset-0 border border-stone-200 translate-x-4 translate-y-4 -z-10" />
             </div>
 

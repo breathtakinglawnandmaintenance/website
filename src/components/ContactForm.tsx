@@ -19,6 +19,19 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
+    // ✅ HARD REQUIRED VALIDATION (guarantees nothing empty is sent)
+    if (
+      !formData.name.trim() ||
+      !formData.email.trim() ||
+      !formData.phone.trim() ||
+      !formData.service.trim() ||
+      !formData.message.trim()
+    ) {
+      setSubmitStatus('error');
+      return;
+    }
+
     if (isSubmitting || submitStatus === 'success') return;
 
     setIsSubmitting(true);
@@ -151,6 +164,7 @@ export default function ContactForm() {
             name="service"
             value={formData.service}
             onChange={handleChange}
+            required
             className="w-full bg-transparent border-b border-stone-200 py-3 outline-none focus:border-secondary-500 transition-colors appearance-none cursor-pointer font-light text-stone-700"
           >
             <option value="Professional Lawn Care Services">

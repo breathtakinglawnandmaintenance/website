@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Instagram, Facebook, Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start">
             <Link to="/" onClick={scrollToTop} className="block mb-6">
               <img
-                src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/business%20logo.png"
+                src="/images/Medium2.png"
                 alt="Breathtaking Lawn & Maintenance"
                 className="h-20 w-auto object-contain brightness-110 contrast-110"
               />
@@ -122,25 +122,37 @@ export default function Footer() {
           </div>
 
           {/* 4. Social */}
-          <div className="flex flex-col items-center md:items-start">
-            <h4 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-8 text-secondary-500/80">
-              Connect With Us
-            </h4>
+<div className="flex flex-col items-center md:items-start">
+  <h4 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-8 text-secondary-500/80">
+    Connect With Us
+  </h4>
 
-            <div className="flex items-center gap-4 justify-center md:justify-start">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 border border-white/10 rounded-full hover:bg-secondary-500 hover:text-primary-950 transition-all duration-300"
-              >
-                <Instagram size={20} />
-              </a>
+  <div className="flex items-center gap-4 justify-center md:justify-start mb-4">
 
-              <span className="text-xs font-light text-stone-500 uppercase tracking-widest">
-                Follow our work
-              </span>
-            </div>
+    <a
+      href="https://www.instagram.com/breathtakinglawnandmaintenance/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-3 border border-white/10 rounded-full hover:bg-secondary-500 hover:text-primary-950 transition-all duration-300"
+    >
+      <Instagram size={20} />
+    </a>
+
+    <a
+      href="https://www.facebook.com/profile.php?id=61561098543589"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-3 border border-white/10 rounded-full hover:bg-secondary-500 hover:text-primary-950 transition-all duration-300"
+    >
+      <Facebook size={20} />
+    </a>
+
+    <span className="text-xs font-light text-stone-500 uppercase tracking-widest">
+      Follow our work
+    </span>
+
+  </div>
+</div>
           </div>
         </div>
 
@@ -157,7 +169,6 @@ export default function Footer() {
             Designed by HM Marketing Designs
           </a>
         </div>
-      </div>
     </footer>
   );
 }

@@ -10,7 +10,6 @@ export default function PlantingAndMulch() {
         title="Planting and Mulch Services | Saratoga Springs, NY | Breathtaking Lawn and Maintenance Care"
         description="Professional planting and mulch installation in Saratoga Springs, NY. Garden bed design, seasonal plantings, and premium mulch services. Request a free quote."
         canonicalPath="/services/mulch-flower-beds"
-        preloadImage="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/planting%20flower%20bed.webp"
       />
 
       <Header />
@@ -30,11 +29,22 @@ export default function PlantingAndMulch() {
           {/* ROW 1 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
             <div className="relative">
-              <img
-                src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/planting%20flower%20bed.webp"
-                alt="New residential flower bed installation along home foundation"
-                className="w-full h-[500px] object-cover shadow-2xl rounded-sm"
-              />
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/planting-flower-bed-cell.webp"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcSet="/images/planting-flower-bed-tablet.webp"
+                />
+                <img
+                  src="/images/planting-flower-bed.webp"
+                  alt="New residential flower bed installation along home foundation"
+                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  loading="lazy"
+                />
+              </picture>
               <div className="absolute inset-0 border border-stone-200 translate-x-4 translate-y-4 -z-10" />
             </div>
 
@@ -62,11 +72,22 @@ export default function PlantingAndMulch() {
             </div>
 
             <div className="order-1 lg:order-2 relative">
-              <img
-                src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/mulched%20brick%20flower%20bed.webp"
-                alt="Fresh black mulch installation in landscaped garden bed with stone border"
-                className="w-full h-[500px] object-cover shadow-2xl rounded-sm"
-              />
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/mulched-brick-flower-bed-cell.webp"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcSet="/images/mulched-brick-flower-bed-tablet.webp"
+                />
+                <img
+                  src="/images/mulched-brick-flower-bed.webp"
+                  alt="Fresh black mulch installation in landscaped garden bed with stone border"
+                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  loading="lazy"
+                />
+              </picture>
               <div className="absolute inset-0 border border-stone-200 -translate-x-4 translate-y-4 -z-10" />
             </div>
           </div>
@@ -74,11 +95,22 @@ export default function PlantingAndMulch() {
           {/* ROW 3 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <img
-                src="https://raw.githubusercontent.com/breathtakinglawnandmaintenance/images/main/mulch%20beding.webp"
-                alt="Fresh mulch applied around shrubs in residential landscape bed"
-                className="w-full h-[500px] object-cover shadow-2xl rounded-sm"
-              />
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/mulch-beding-cell.webp"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcSet="/images/mulch-beding-tablet.webp"
+                />
+                <img
+                  src="/images/mulch-beding.webp"
+                  alt="Fresh mulch applied around shrubs in residential landscape bed"
+                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  loading="lazy"
+                />
+              </picture>
               <div className="absolute inset-0 border border-stone-200 translate-x-4 translate-y-4 -z-10" />
             </div>
 
