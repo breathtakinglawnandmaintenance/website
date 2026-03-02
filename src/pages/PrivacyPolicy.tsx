@@ -1,6 +1,5 @@
 // src/pages/PrivacyPolicy.tsx
 
-import React from "react";
 import SEO from "../components/SEO";
 
 export default function PrivacyPolicy() {
@@ -20,9 +19,12 @@ export default function PrivacyPolicy() {
             <h1 className="text-4xl md:text-5xl font-serif text-primary-950">
               Privacy Policy
             </h1>
-            <p className="mt-3 text-sm text-stone-500">
+
+            {/* Contrast fixed here */}
+            <p className="mt-3 text-sm text-stone-600">
               Effective date: {effectiveDate}
             </p>
+
             <div className="w-24 h-px bg-secondary-400 mx-auto mt-6" />
           </header>
 

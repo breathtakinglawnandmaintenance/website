@@ -92,7 +92,7 @@ export default function ContactForm() {
         <div className="relative group">
           <label
             htmlFor="contact-name"
-            className="text-[10px] uppercase tracking-[0.3em] text-stone-400 font-bold mb-2 block"
+            className="text-[10px] uppercase tracking-[0.3em] text-stone-600 font-bold mb-2 block"
           >
             Full Name
           </label>
@@ -113,7 +113,7 @@ export default function ContactForm() {
         <div className="relative group">
           <label
             htmlFor="contact-email"
-            className="text-[10px] uppercase tracking-[0.3em] text-stone-400 font-bold mb-2 block"
+            className="text-[10px] uppercase tracking-[0.3em] text-stone-600 font-bold mb-2 block"
           >
             Email Address
           </label>
@@ -134,7 +134,7 @@ export default function ContactForm() {
         <div className="relative group">
           <label
             htmlFor="contact-phone"
-            className="text-[10px] uppercase tracking-[0.3em] text-stone-400 font-bold mb-2 block"
+            className="text-[10px] uppercase tracking-[0.3em] text-stone-600 font-bold mb-2 block"
           >
             Phone Number
           </label>
@@ -155,7 +155,7 @@ export default function ContactForm() {
         <div className="relative group">
           <label
             htmlFor="contact-service"
-            className="text-[10px] uppercase tracking-[0.3em] text-stone-400 font-bold mb-2 block"
+            className="text-[10px] uppercase tracking-[0.3em] text-stone-600 font-bold mb-2 block"
           >
             Service Selection
           </label>
@@ -182,7 +182,7 @@ export default function ContactForm() {
       <div className="relative group">
         <label
           htmlFor="contact-message"
-          className="text-[10px] uppercase tracking-[0.3em] text-stone-400 font-bold mb-2 block"
+          className="text-[10px] uppercase tracking-[0.3em] text-stone-600 font-bold mb-2 block"
         >
           Project Details
         </label>

@@ -10,7 +10,6 @@ export default function Footer() {
     <footer className="bg-primary-950 text-stone-300 py-20 border-t border-white/5">
       <div className="container mx-auto px-6">
 
-        {/* GRID */}
         <div
           className="
             grid grid-cols-1
@@ -20,7 +19,8 @@ export default function Footer() {
             text-center md:text-left
           "
         >
-          {/* 1. LEFT: Business Logo & Branding */}
+
+          {/* Logo */}
           <div className="flex flex-col items-center md:items-start">
             <Link to="/" onClick={scrollToTop} className="block mb-6">
               <img
@@ -31,12 +31,12 @@ export default function Footer() {
                 className="h-32 w-auto object-contain brightness-110 contrast-110"
               />
             </Link>
-            <p className="text-stone-500 text-[10px] font-light tracking-[0.2em] uppercase">
+            <p className="text-stone-400 text-[10px] font-light tracking-[0.2em] uppercase">
               Established 2021
             </p>
           </div>
 
-          {/* 2. Navigation */}
+          {/* Navigation */}
           <div className="flex flex-col items-center md:items-start">
             <h2 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-8 text-secondary-500/80">
               Navigation
@@ -46,30 +46,26 @@ export default function Footer() {
               <li>
                 <button
                   onClick={scrollToTop}
-                  className="hover:text-secondary-400 transition-colors cursor-pointer outline-none"
+                  className="hover:text-secondary-400 transition-colors cursor-pointer"
                 >
                   Home
                 </button>
               </li>
-
               <li>
                 <a href="/#services" className="hover:text-secondary-400 transition-colors">
                   Services
                 </a>
               </li>
-
               <li>
                 <a href="/#about" className="hover:text-secondary-400 transition-colors">
                   About Us
                 </a>
               </li>
-
               <li>
                 <a href="/#testimonials" className="hover:text-secondary-400 transition-colors">
                   Testimonials
                 </a>
               </li>
-
               <li>
                 <Link to="/privacy-policy" className="hover:text-secondary-400 transition-colors">
                   Privacy Policy
@@ -78,24 +74,24 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* 3. Business Information */}
+          {/* Business Info */}
           <div className="space-y-6 md:pr-6 flex flex-col items-center md:items-start">
             <h2 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-8 text-secondary-500/80">
               Business Information
             </h2>
 
-            <div className="flex items-start gap-4 justify-center md:justify-start">
+            <div className="flex items-start gap-4">
               <Phone size={16} className="text-secondary-400 mt-1" />
-              <div className="text-center md:text-left">
-                <p className="text-[10px] text-stone-500 uppercase tracking-widest mb-1">Call</p>
+              <div>
+                <p className="text-[10px] text-stone-400 uppercase tracking-widest mb-1">Call</p>
                 <p className="text-sm text-white font-light">518-682-0033</p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4 justify-center md:justify-start">
+            <div className="flex items-start gap-4">
               <Mail size={16} className="text-secondary-400 mt-1" />
-              <div className="text-center md:text-left">
-                <p className="text-[10px] text-stone-500 uppercase tracking-widest mb-1">Email</p>
+              <div>
+                <p className="text-[10px] text-stone-400 uppercase tracking-widest mb-1">Email</p>
                 <a
                   href="mailto:Breathtakinglawnandmaintenance@yahoo.com"
                   className="text-sm text-white font-light hover:text-secondary-400 transition-colors break-words"
@@ -105,63 +101,60 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4 justify-center md:justify-start">
+            <div className="flex items-start gap-4">
               <MapPin size={16} className="text-secondary-400 mt-1" />
-              <div className="text-center md:text-left">
-                <p className="text-[10px] text-stone-500 uppercase tracking-widest mb-1">HQ</p>
+              <div>
+                <p className="text-[10px] text-stone-400 uppercase tracking-widest mb-1">HQ</p>
                 <p className="text-sm text-white font-light">Saratoga Springs, NY</p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4 justify-center md:justify-start">
+            <div className="flex items-start gap-4">
               <Clock size={16} className="text-secondary-400 mt-1" />
-              <div className="text-center md:text-left">
-                <p className="text-[10px] text-stone-500 uppercase tracking-widest mb-1">Hours</p>
+              <div>
+                <p className="text-[10px] text-stone-400 uppercase tracking-widest mb-1">Hours</p>
                 <p className="text-sm text-white font-light">Mon–Sat: 8:00 AM – 4:00 PM</p>
                 <p className="text-sm text-white font-light">Sun: Closed</p>
               </div>
             </div>
           </div>
 
-          {/* 4. Social */}
-<div className="flex flex-col items-center md:items-start">
-  <h2 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-8 text-secondary-500/80">
-    Connect With Us
-  </h2>
+          {/* Social */}
+          <div className="flex flex-col items-center md:items-start">
+            <h2 className="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-8 text-secondary-500/80">
+              Connect With Us
+            </h2>
 
-  <div className="flex items-center gap-4 justify-center md:justify-start mb-4">
+            <div className="flex items-center gap-4 mb-4">
+              <a
+                href="https://www.instagram.com/breathtakinglawnandmaintenance/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Breathtaking Lawn and Maintenance on Instagram"
+                className="p-3 border border-white/10 rounded-full hover:bg-secondary-500 hover:text-primary-950 transition-all duration-300"
+              >
+                <Instagram size={20} aria-hidden="true" />
+              </a>
 
-        <a
-          href="https://www.instagram.com/breathtakinglawnandmaintenance/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Breathtaking Lawn and Maintenance on Instagram"
-          className="p-3 border border-white/10 rounded-full hover:bg-secondary-500 hover:text-primary-950 transition-all duration-300"
-         >
-          <Instagram size={20} aria-hidden="true" />
-        </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61561098543589"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Breathtaking Lawn and Maintenance on Facebook"
+                className="p-3 border border-white/10 rounded-full hover:bg-secondary-500 hover:text-primary-950 transition-all duration-300"
+              >
+                <Facebook size={20} aria-hidden="true" />
+              </a>
 
-        <a
-          href="https://www.facebook.com/profile.php?id=61561098543589"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Breathtaking Lawn and Maintenance on Facebook"
-          className="p-3 border border-white/10 rounded-full hover:bg-secondary-500 hover:text-primary-950 transition-all duration-300"
-         >
-          <Facebook size={20} aria-hidden="true" />
-        </a>
-
-    <span className="text-xs font-light text-stone-500 uppercase tracking-widest">
-      Follow our work
-    </span>
-
-  </div>
-</div>
+              <span className="text-xs font-light text-stone-400 uppercase tracking-widest">
+                Follow our work
+              </span>
+            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase tracking-[0.2em] text-stone-600 font-medium text-center">
+        <div className="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase tracking-[0.2em] text-stone-400 font-medium text-center">
           <p>&copy; 2026 Breathtaking Lawn and Maintenance Care, LLC. All Rights Reserved.</p>
 
           <a
@@ -173,6 +166,7 @@ export default function Footer() {
             Designed by HM Marketing Designs
           </a>
         </div>
+      </div>
     </footer>
   );
 }
