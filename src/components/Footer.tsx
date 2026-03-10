@@ -137,7 +137,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://www.facebook.com/profile.php?id=61561098543589"
+                href="https://www.facebook.com/breathtakinglawnandmaintenancecare/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Visit Breathtaking Lawn and Maintenance on Facebook"
