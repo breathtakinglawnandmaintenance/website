@@ -41,12 +41,10 @@ export default function PlantingAndMulch() {
                 <img
                   src="/images/planting-flower-bed.webp"
                   alt="New residential flower bed installation along home foundation"
-                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  className="w-full h-auto object-cover rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] ring-1 ring-stone-200"
                   loading="lazy"
                 />
-              </picture>
-              <div className="absolute inset-0 border border-stone-200 translate-x-4 translate-y-4 -z-10" />
-            </div>
+              </picture>            </div>
 
             <div className="max-w-xl">
               <h2 className="text-3xl font-serif text-primary-950 mb-6">
@@ -84,12 +82,10 @@ export default function PlantingAndMulch() {
                 <img
                   src="/images/mulched-brick-flower-bed.webp"
                   alt="Fresh black mulch installation in landscaped garden bed with stone border"
-                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  className="w-full h-auto object-cover rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] ring-1 ring-stone-200"
                   loading="lazy"
                 />
-              </picture>
-              <div className="absolute inset-0 border border-stone-200 -translate-x-4 translate-y-4 -z-10" />
-            </div>
+              </picture>            </div>
           </div>
 
           {/* ROW 3 */}
@@ -107,12 +103,10 @@ export default function PlantingAndMulch() {
                 <img
                   src="/images/mulch-beding.webp"
                   alt="Fresh mulch applied around shrubs in residential landscape bed"
-                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  className="w-full h-auto object-cover rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] ring-1 ring-stone-200"
                   loading="lazy"
                 />
-              </picture>
-              <div className="absolute inset-0 border border-stone-200 translate-x-4 translate-y-4 -z-10" />
-            </div>
+              </picture>            </div>
 
             <div className="max-w-xl">
               <h2 className="text-3xl font-serif text-primary-950 mb-6">

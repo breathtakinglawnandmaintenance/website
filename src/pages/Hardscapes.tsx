@@ -42,7 +42,7 @@ export default function Hardscapes() {
                 <img
                   src="/images/hardscaping-pool.webp"
                   alt="Stamped concrete poolside patio and walkway hardscape installation"
-                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  className="w-full h-auto object-cover rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] ring-1 ring-stone-200"
                   loading="lazy"
                 />
               </picture>
@@ -86,7 +86,7 @@ export default function Hardscapes() {
                 <img
                   src="/images/brick-work-for-outdoor-grill.webp"
                   alt="Built-in outdoor grill installed in stone brick hardscape wall"
-                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  className="w-full h-auto object-cover rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] ring-1 ring-stone-200"
                   loading="lazy"
                 />
               </picture>
@@ -110,7 +110,7 @@ export default function Hardscapes() {
                 <img
                   src="/images/Hardscaping-brick.webp"
                   alt="Stone paver hardscape installation set into landscaped ground"
-                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  className="w-full h-auto object-cover rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] ring-1 ring-stone-200"
                   loading="lazy"
                 />
               </picture>

@@ -41,12 +41,10 @@ export default function SnowRemoval() {
                 <img
                   src="/images/unburied-car.webp"
                   alt="Snow removed around car"
-                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  className="w-full h-auto object-cover rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] ring-1 ring-stone-200"
                   loading="lazy"
                 />
-              </picture>
-              <div className="absolute inset-0 border border-stone-200 translate-x-4 translate-y-4 -z-10" />
-            </div>
+              </picture>            </div>
 
             <div className="max-w-xl">
               <h2 className="text-3xl font-serif text-primary-950 mb-6">
@@ -86,12 +84,10 @@ export default function SnowRemoval() {
                 <img
                   src="/images/plowed-driveway.webp"
                   alt="Snow plowed driveway"
-                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  className="w-full h-auto object-cover rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] ring-1 ring-stone-200"
                   loading="lazy"
                 />
-              </picture>
-              <div className="absolute inset-0 border border-stone-200 -translate-x-4 translate-y-4 -z-10" />
-            </div>
+              </picture>            </div>
           </div>
 
           {/* ROW 3 */}
@@ -109,12 +105,10 @@ export default function SnowRemoval() {
                 <img
                   src="/images/cleared-driveway.webp"
                   alt="Snow removed from driveway"
-                  className="w-full h-auto object-cover shadow-2xl rounded-sm"
+                  className="w-full h-auto object-cover rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] ring-1 ring-stone-200"
                   loading="lazy"
                 />
-              </picture>
-              <div className="absolute inset-0 border border-stone-200 translate-x-4 translate-y-4 -z-10" />
-            </div>
+              </picture>            </div>
 
             <div className="max-w-xl">
               <h2 className="text-3xl font-serif text-primary-950 mb-6">

@@ -33,7 +33,7 @@ export default function ServiceCTA() {
             <button
               type="button"
               onClick={handleClick}
-              className="bg-secondary-500 hover:bg-secondary-400 text-primary-950 px-8 py-3.5 text-xs font-bold uppercase tracking-[0.4em] transition-all shadow-2xl active:scale-95 border border-secondary-600/20"
+              className="bg-secondary-500 hover:bg-secondary-400 text-primary-950 px-8 py-3.5 rounded-xl text-xs font-bold uppercase tracking-[0.4em] transition-all shadow-2xl active:scale-95 border border-secondary-600/20"
             >
               Get a Free Quote
             </button>

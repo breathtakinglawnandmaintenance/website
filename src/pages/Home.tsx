@@ -41,7 +41,7 @@ export default function Home() {
         <div className="relative z-10 w-full pb-20 md:pb-32 flex justify-center">
           <a
             href="#contact"
-            className="bg-secondary-500 hover:bg-secondary-400 text-primary-950 px-8 py-3.5 text-xs font-bold uppercase tracking-[0.4em] transition-all shadow-2xl active:scale-95 border border-secondary-600/20 inline-flex items-center justify-center"
+            className="bg-secondary-500 hover:bg-secondary-400 text-primary-950 px-8 py-3.5 rounded-xl text-xs font-bold uppercase tracking-[0.4em] transition-all shadow-2xl active:scale-95 border border-secondary-600/20 inline-flex items-center justify-center"
           >
             Get A Quote
           </a>

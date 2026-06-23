@@ -49,8 +49,8 @@ export default function ServiceCard({
   return (
     <Link
       to={link}
-      className="group relative flex flex-col bg-white overflow-hidden rounded-sm transition-all duration-500
-                 shadow-[0_15px_40px_-15px_rgba(0,0,0,0.16)]
+      className="group relative flex flex-col bg-white overflow-hidden rounded-xl transition-all duration-500
+                 shadow-[0_20px_60px_rgba(0,0,0,0.08)]
                  hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.24)]
                  hover:-translate-y-2"
     >

@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-stone-100/50">
+    <section id="about" className="py-24 bg-stone-50">
       <div className="container mx-auto px-6">
-        <div className="bg-white shadow-[0_50px_100px_-30px_rgba(0,0,0,0.12)] p-8 md:p-16 relative z-10 rounded-sm">
+        <div className="bg-white shadow-[0_20px_60px_rgba(0,0,0,0.08)] p-8 md:p-16 relative z-10 rounded-xl overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-12 lg:gap-16 items-center">
             {/* IMAGE */}
             <div className="relative">

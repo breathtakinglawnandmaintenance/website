@@ -213,7 +213,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting || submitStatus === 'success'}
-        className="w-full bg-primary-950 text-white py-5 text-[10px] uppercase tracking-[0.5em] font-bold hover:bg-secondary-500 hover:text-primary-950 focus-visible:ring-2 focus-visible:ring-secondary-500 focus-visible:ring-offset-2 transition-all duration-300 shadow-xl disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full bg-primary-950 text-white py-5 rounded-xl text-[10px] uppercase tracking-[0.5em] font-bold hover:bg-secondary-500 hover:text-primary-950 focus-visible:ring-2 focus-visible:ring-secondary-500 focus-visible:ring-offset-2 transition-all duration-300 shadow-xl disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {submitStatus === 'success'
           ? 'Request Submitted'
