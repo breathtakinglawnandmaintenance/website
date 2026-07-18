@@ -154,7 +154,7 @@ export default function Testimonials() {
       </div>
 
       {/* DOTS / PROGRESS */}
-      <div className="flex justify-center gap-3">
+      <div className="flex justify-center">
         {reviews.map((review, index) => (
           <button
             key={review.id}
@@ -162,12 +162,17 @@ export default function Testimonials() {
             onClick={() => handleSelect(index)}
             aria-label={`Show review from ${review.name}`}
             aria-current={index === active}
-            className={`h-2 rounded-full transition-all duration-300 ${
-              index === active
-                ? 'w-8 bg-secondary-500'
-                : 'w-2 bg-stone-300 hover:bg-stone-400'
-            }`}
-          />
+            className="inline-flex items-center justify-center p-2"
+          >
+            <span
+              aria-hidden="true"
+              className={`h-2 rounded-full transition-all duration-300 ${
+                index === active
+                  ? 'w-8 bg-secondary-500'
+                  : 'w-2 bg-stone-300 hover:bg-stone-400'
+              }`}
+            />
+          </button>
         ))}
       </div>
     </div>
