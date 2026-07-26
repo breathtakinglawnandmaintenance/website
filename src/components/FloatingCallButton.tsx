@@ -5,6 +5,7 @@ export default function FloatingCallButton() {
     <a
       href="tel:+15186820033"
       aria-label="Call us"
+      data-umami-event="Mobile Call"
       className="
         md:hidden
         fixed bottom-6 right-6
